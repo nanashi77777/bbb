@@ -280,7 +280,7 @@ const App: React.FC = () => {
 
   // UI Handlers
   const onRollDice = () => sendAction({ type: 'ROLL_DICE', payload: { playerId: myId } });
-  const onEndTurn = () => sendAction({ type: 'END_TURN', payload: { playerId: myId } });
+  
   const onInteract = (action: 'BUY' | 'UPGRADE' | 'PAY' | 'REDEEM' | 'NOTHING') => 
     sendAction({ type: 'INTERACT', payload: { playerId: myId, action } });
   
